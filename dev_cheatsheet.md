@@ -10,7 +10,7 @@
 
 ➢ **DO WHILE** : Pour executer du code au moins une fois avant de boucler.
 
-➢ **FOR IN** _(js)_ : Pour parcourir les propriétés "énumérables" d'un objet.
+➢ **FOR IN** _(js)_ : Pour parcourir les propriétés "énumérables" d'un [objet](#objet).
 
 ➢ **FOR OF** _(js)_ : Pour parcourir les propriétés d'un "itérable" (tableau, string, etc).
 
@@ -33,7 +33,7 @@
 
 ➢ **Undefined** _(js)_ : Déclaré mais non définie.
 
-➢ **Null** _(js)_ : Un objet qui ne contient rien.
+➢ **Null** _(js)_ : Un [objet](#objet) qui ne contient rien.
 
 <br>
 
@@ -44,7 +44,7 @@
 
 ➢ **Array** : Un tableau (itérable).
 
-➢ **Object** : Structure de données représentant une entité avec des propriétés et des méthodes.
+➢ **Object** : Structure de données représentant une [entité](#entite) avec des propriétés et des méthodes.
 
 ➢ **List** : Similaire aux tableaux, mais de taille dynamique et pouvant stocker des éléments de différents types.
 
@@ -69,65 +69,77 @@
 ➢ **Interface** : Contrat qui spécifient un ensemble de [méthodes](#methode) qu'une [classe](#classe) doit implémenter.
 
 
+
+
 <br>
 
 ---
 
 ## ✎ LES TERMES TECHNIQUES :
 ### <u>Programmation orienté objet (POO) :</u>
-➢ **Decorateur** :  Patron de conception structurel qui permet de "décorer" un objet en y ajoutant des méthodes ou en modifiant le comportement de méthodes existantes.
-
-➢ <b id="encapsulation">Encapsulation</b> : Restriction de l'accès direct aux composants ([attributs](#attribut)/[methodes](#methode)) d'un objet. Elle permet donc de cacher les détails internes d'une classe et d'exposer uniquement ce qui est nécessaire.
-
-➢ <b id="attribut">Attribut</b> (variable membre) : [Variable](#variable) associée à une [classe](#classe) ou à une instance de classe et qui représente les [propriétées](#propriete) ou caractéristiques d'un objet.
-
-➢ <b id="methode">Methode</b> : [Fonction](#fonction) définie à l'intérieur d'une [classe](#classe) et qui représente les actions qu'un objet peut réaliser.
-
-➢ **Constructeur** : [Méthode](#methode) spéciale d'une [classe](#classe) appelée lors de création d'une instance de classe.
-
-➢ **Destructeur** : [Méthode](#methode) spéciale d'une [classe](#classe) appelée lors de la destruction d'une instance.
-
-➢ **Accesseur** (Getter) : [Méthode](#methode) utilisée pour obtenir la valeur d'un [Attribut](#attribut) "protégé".
-
-➢ <b id="classAbstraite">Classe Abstraite</b> : [classe](#classe) qui ne peut pas être [instanciée](#instance) directement et sert généralement de base pour d'autres classes.
-
-➢ **Méthode abstraite** : [Méthode](#methode) déclarée mais non [implémentée](#implementation) dans une [classe abstraite](#classAbstraite) (elle doit toutefois être implémentée par toutes les [sous-classes](#sousClass) non abstraites).
-
-➢ **Visibilité** : Définit si (ou comment) un [attribut](#attribut) ou une [methode](#methode) est accessible en dehors de la [classe](#classe) ([public](#public), [private](#private), [protected](#protected)).
-
-➢ **Mutateur** (Setter) : [Méthode](#methode) utilisée pour définir ou modifier la valeur d'un [attribut](#attribut).
-
-➢ **Surcharger** (Overloading) : Définir plusieurs [methodes](#methode) ou [fonctions](#fonction) avec le même nom mais avec des [paramètres](#parametre) différents.
-
-➢ <b id="instance">Instance</b> : Objet individuel créé à partir d'une [classe](#classe).
-
-➢ **Instantiation** : Processus de création d'un objet à partir d'une [classe](#classe).
 
 ➢ **Abstraction** :  Pratique de cacher les détails complexes et de présenter uniquement les caractéristiques essentielles.
 
-➢ <b id="propriete">Propriete</b> (interface) : Synonyme d'[attribut](#attribut), c'est une caractéristique ou une donnée membre d'une classe.
+➢ **Accesseur** (Getter) : [Méthode](#methode) utilisée pour obtenir la valeur d'un [Attribut](#attribut) "protégé".
 
-➢ <b id="superClass">SuperClasse</b> : Une classe dont d'autres [classes](#classe) héritent des caractéristiques. Aussi appelée classe mère ou classe parente.
-
-➢ <b id="sousClass">Sous-classe</b> : Une classe qui hérite des caractéristiques d'une autre [classe](#classe). Aussi appelée classe fille ou classe dérivée.   
-
-➢ <b id="heritage">Heritage</b> : Mécanisme par lequel une [classe](#classe) peut hériter des [attributs](#attribut) et des [methodes](#methode) d'une autre classe.
-
-➢ **Composition** : Une forme de relation où une [classe](#classe) contient une [instances](#instance) d'une autre classe comme [attributs](#attribut).
+➢ **Agrégation** : Forme spéciale d'association où une [classe](#classe) contient une référence à un [objet](#objet) d'une autre classe, mais sans en prendre la propriété complète.
 
 ➢ **Association** : Relation entre deux [classes](#classe) ou l'une utilise les fonctionnalités de l'autre mais sans dépendance très forte.
 
+➢ <b id="attribut">Attribut</b> (variable membre) : [Variable](#variable) associée à une [classe](#classe) ou à une instance de classe et qui représente les [propriétées](#propriete) ou caractéristiques d'un [objet](#objet).
+
+➢ **Composition** : Une forme de relation où une [classe](#classe) contient une [instances](#instance) d'une autre classe comme [attributs](#attribut).
+
+➢ **Constructeur** : [Méthode](#methode) spéciale d'une [classe](#classe) appelée lors de création d'une instance de classe.
+
+➢ <b id="classAbstraite">Classe Abstraite</b> : [classe](#classe) qui ne peut pas être [instanciée](#instance) directement et sert généralement de base pour d'autres classes.
+
+➢ **Decorateur** :  Patron de conception structurel qui permet de "décorer" un [objet](#objet) en y ajoutant des méthodes ou en modifiant le comportement de méthodes existantes.
+
 ➢ <b id="dependance">Dépendance</b> : Lien entre 2 classes où l'une dépend de l'autre pour son fonctionnement.
 
-➢ **Factory** (Fabrique) : Patron de conception pour créer des objets sans spécifier la [classe](#classe) exacte à instancier.
+➢ **Destructeur** : [Méthode](#methode) spéciale d'une [classe](#classe) appelée lors de la destruction d'une instance.
 
-➢ **Singleton** : Patron de conception qui restreint l'instanciation d'une [classe](#classe) à un seul objet.
+➢ <b id="encapsulation">Encapsulation</b> : Regroupement des données ([attributs](#attribut)) et des [méthodes](#methode) ([fonctions](#fonction)) qui manipulent ces données en une seule unité ou [classe](#classe). L'encapsulation vise également à [restreindre l'accès](#public) direct à certaines composantes de cet [objet](#objet), afin de prévenir des modifications non autorisées ou inattendues de ces données.
 
-➢ **Agrégation** : Forme spéciale d'association où une [classe](#classe) contient une référence à un objet d'une autre classe, mais sans en prendre la propriété complète.
+➢ <b id="entite">Entité</b> : Une [entité](#entite) peut se référer à un [objet](#objet) ou à une [instance](#instance) d'une [classe](#classe) particulière, en particulier lorsqu'il s'agit d'un objet représentant un concept du monde réel dans le système, comme un utilisateur ou un produit. Une entité peut avoir des [méthodes](#methode) et des [propriétés](#propriete) associées pour manipuler et représenter ses données. 
 
-➢ **Interface** : Déclaration de [méthodes](#methode) sans [implémentations](#implementation) que les [classes](#classe) doivent quand à elle implémenter. Elle permet à différents objets d'être traités comme des [instances](#instance) d'une interface commune, indépendamment de leur classe d'origine.
+➢ **Factory** (Fabrique) : Patron de conception pour créer des [objets](#objet) sans spécifier la [classe](#classe) exacte à instancier.
 
-➢ <b id="polymorphisme">Polymorhpisme</b> : Capacité de prendre plusieurs formes pour des objets de classes différentes afin d'être traités comme des objets d'une classe commune.
+➢ <b id="heritage">Heritage</b> : Mécanisme par lequel une [classe](#classe) peut hériter des [attributs](#attribut) et des [methodes](#methode) d'une autre classe.
+
+➢ <b id="instance">Instance</b> : [Objet](#objet) individuel créé à partir d'une [classe](#classe).
+
+➢ <b id="instancier">Instancier</b> : Créer une [instance](#instance) ou un [objet](#objet) d'une [classe](#classe) spécifique.
+
+➢ **Instantiation** : Processus de création d'un [objet](#objet) à partir d'une [classe](#classe).
+
+➢ **Interface** : Déclaration de [méthodes](#methode) sans [implémentations](#implementation) que les [classes](#classe) doivent quand à elle implémenter. Elle permet à différents [objets](#objet) d'être traités comme des [instances](#instance) d'une interface commune, indépendamment de leur classe d'origine.
+
+➢ <b id="membre">Membre</b> : Attribut ou méthode associé à une [classe](#classe) ou une structure.
+
+➢ <b id="methode">Methode</b> : [Fonction](#fonction) définie à l'intérieur d'une [classe](#classe) et qui représente les actions qu'un [objet](#objet) peut réaliser.
+
+➢ **Méthode abstraite** : [Méthode](#methode) déclarée mais non [implémentée](#implementation) dans une [classe abstraite](#classAbstraite) (elle doit toutefois être implémentée par toutes les [sous-classes](#sousClass) non abstraites).
+
+➢ **Mutateur** (Setter) : [Méthode](#methode) utilisée pour définir ou modifier la valeur d'un [attribut](#attribut).
+
+➢ <b id="objet">Objet</b> : Instance concrète d'une [classe](#classe). Il s'agit d'une [entité](#entite) qui [encapsule](#encapsulation) à la fois les données (par ses [attributs](#attribut)) et les [méthodes](#methode) qui opèrent sur ces donnée. Cela permet l'encapsulation, l'héritage, le polymorphisme et d'autres concepts fondamentaux de la POO.
+
+➢ <b id="polymorphisme">Polymorhpisme</b> : Capacité de prendre plusieurs formes pour des [objets](#objet) de classes différentes afin d'être traités comme des objets d'une classe commune.
+
+➢ <b id="propriete">Propriete</b> (interface) : Synonyme d'[attribut](#attribut), c'est une caractéristique ou une donnée membre d'une classe.
+
+➢ **Singleton** : Patron de conception qui restreint l'instanciation d'une [classe](#classe) à un seul [objet](#objet).
+
+➢ <b id="superClass">SuperClasse</b> : Une classe dont d'autres [classes](#classe) héritent des caractéristiques. Aussi appelée classe mère ou classe parente.
+
+➢ **Surcharger** (Overloading) : Définir plusieurs [methodes](#methode) ou [fonctions](#fonction) avec le même nom mais avec des [paramètres](#parametre) différents.
+
+➢ <b id="sousClass">Sous-classe</b> : Une classe qui hérite des caractéristiques d'une autre [classe](#classe). Aussi appelée classe fille ou classe dérivée.   
+
+➢ **Visibilité** : Définit si (ou comment) un [attribut](#attribut) ou une [methode](#methode) est accessible en dehors de la [classe](#classe) ([public](#public), [private](#private), [protected](#protected)).
+
 
 <br>
 
@@ -163,6 +175,8 @@
 
 ➢ **Recurssion** : (récursivité) Mécanisme où une [Fonction](#fonction) s'appelle elle-même. Une fonction récursive doit obligatoirement posséder une condition d'arret afin d'évite une boucle infinis.
 
+➢ **Routine** : Séquences répétitives de code conçues pour effectuer une tâche spécifique.
+
 ➢ <b id="variable">Variable</b> : Emplacement de stockage pour une valeur.
 
 <br>
@@ -176,23 +190,35 @@
 
 ➢ **Arbre** : Structure de données hiérarchique composée de [nœuds](#noeud), où chaque nœud a un parent (sauf le nœud racine) et 0 ou n enfants.
 
+➢ **Controller** : Dans un contexte MVC, il s'agit de la partie qui reçoit les requêtes, traite la logique métier et renvoie une réponse.
+
+➢ **DTO** (Data Transfer Object) : [Objet](#objet) utilisé pour [encapsuler](#encapsulation) les données et les transférer entre des composants d'un système.
+
 ➢ **Design Pattern** (Pattern) : Façon répétitive ou habituelle de faire quelque chose (bonne pratique).
 
-➢ **Implémentation** : Réalisation concrète d'une méthode, fonction, classe ou interface définie.
+➢ **Factorisation** (refactoring): Processus de restructuration du code existant sans changer son comportement externe afin  de regrouper des parties de code similaires ou répétitives en une seule structure, fonction ou module, afin de réduire la redondance, d'améliorer la lisibilité et de faciliter la maintenance future. Le terme peut aussi être utilisé pour décrire la simplification de l'expression ou de la structure du code.
 
-➢ **Injection** (de [dépendance](#dépendance)) : Technique consistant à insérer des objets dans une classe.
+➢ **Implémentation** : Réalisation concrète d'une fonctionnalité, d'une méthode ou d'une interface.
+
+➢ **Injection** (de [dépendance](#dépendance)) : Technique consistant à insérer des [objets](#objet) dans une classe.
 
 ➢ **Injection** (de code) : Technique par laquelle un attaquant peut insérer ou "injecter" du code malveillant dans un système (ex: injection SQL ou de JS). 
+
+➢ **Modèle** (MVC) : Composante logiciel qui gère les données, la logique métier et les règles. Le modèle est responsable de l'accès aux données. Il sert de pont entre la base de données (ou toute autre source de données) et le contrôleur.
+
+➢ **Modèle** (Entité/POO) : Désigne un schéma ou une structure de données qui illustre comment les différentes tables et relations sont organisées dans une base de données. Il s'agit de [classes](#classe) ou ensemble de classes représentant des [objets](#objet) ou des [entités](#entite) (et leurs relations) dans un système.
 
 ➢ **MVC** (Model-View-Controller) : Modèle architectural pour développer des logiciels en séparant la logique métier, l'interface utilisateur et le contrôle de l'application.
 
 ➢ <b id="noeud">Nœud</b> : Élément individuel d'une structure de données, comme un [arbre](#arbre) ou une [Liste liée](#listeLiee).
 
-➢ **Refactoring** : Processus de restructuration du code existant sans changer son comportement externe afin d'améliorer sa lisibilité, sa structure ou sa complexité.
-
 ➢ **REST** (Representational State Transfer) : Style architectural pour la conception de services de réseau, souvent utilisé pour construire des ([API](#api)) web. 
 
+➢ **Router** : Component qui détermine la manière dont une application répond à une demande [client](#client) pour une route, un URI (Uniform Resource Identifier) ou une [méthode](#methode) spécifique.
+
 ➢ **Sémantique** : Balises HTML qui ont un sens ou une signification spécifique (par exemple, ```<header>, <footer>``` etc).
+
+➢ **Service** :  Composant ou module qui fournit une fonctionnalité spécifique à d'autres composants ou applications.
 
 <br>
 
@@ -209,11 +235,13 @@
 
 ➢ **Concurrence** : Exécution simultanée de plusieurs séquences d'opérations.
 
+➢ **Data** : Données ou informations, souvent stockées ou traitées par des applications ou des bases de données.
+
 ➢ **Debordement de pile** (Stack Overflow) : Erreur qui se produit lorsque la [pile](#pile) atteint sa capacité maximale.
 
 ➢ **Deploiement** : Processus de mise en ligne (production) ou de distribution d'une application/système pour qu'elle soit opérationnelle.
 
-➢ **Deserialisation** : Processus de conversion d'une représentation sérialisée en une structure de données/objet (inverse de la [sérialisation](#serialisation)).
+➢ **Deserialisation** : Processus de conversion d'une représentation sérialisée en une structure de données/[objet](#objet) (inverse de la [sérialisation](#serialisation)).
 
 ➢ **File (Queue)** : Structure de données basée sur le principe Premier Entré, Premier Sorti (PEPS).
 
@@ -227,7 +255,9 @@
 
 ➢ **Lazy Loading** : Tactique de chargement de ressources uniquement lorsqu'elles sont nécessaires.
 
-➢ **Promesse** : Objet représentant la complétion ou l'échec éventuel d'une opération asynchrone.
+➢ **Metadonnée** : Données qui décrivent d'autres données. Par exemple, les informations sur la date de création d'un fichier.
+
+➢ **Promesse** : [Objet](#objet) représentant la complétion ou l'échec éventuel d'une opération asynchrone.
 
 ➢ **Protocole** : Ensemble de règles et conventions pour la communication entre systèmes.
 
@@ -241,7 +271,7 @@
 
 ➢ **Runtime** : Temps pendant lequel un programme est en cours d'exécution.
 
-➢ <b id="serialisation">Serialisation</b> : Processus de conversion d'un objet ou d'une structure de données en un format linéaire (binaire, XML, JSON, etc) = JSON.parse en JS, et ceux pour le stockage ou la transmission. 
+➢ <b id="serialisation">Serialisation</b> : Processus de conversion d'un [objet](#objet) ou d'une structure de données en un format linéaire (binaire, XML, JSON, etc) = JSON.parse en JS, et ceux pour le stockage ou la transmission. 
 
 ➢ <b id="serveur">Serveur</b> :  Système ou application fournissant des ressources, des données ou des services à des [clients](#client).
 
@@ -272,7 +302,7 @@
 
 ➢ **Middleware** : Logiciel qui agit comme un pont entre différents logiciels ou services.
 
-➢ **ORM** (Object-Relational Mapping) : Technique permettant de mapper et de synchroniser les données entre des systèmes de bases de données relationnelles et des objets orientés objet.
+➢ **ORM** (Object-Relational Mapping) : Technique permettant de mapper et de synchroniser les données entre des systèmes de bases de données relationnelles et des objets orientés [objet](#objet).
 
 ➢ **SandBox** (bac à sable) :  Environnement de test isolé où les codes, les applications ou les fichiers peuvent être exécutés sans affecter l'application ou le système d'exploitation hôte.
 
@@ -282,10 +312,16 @@
 
 ---
 
-### <u>Vocabulaire :</u>
+### <u>Vocabulaire Général:</u>
+➢ **Asynchrone** : Opération qui s'exécute sans bloquer le déroulement principal et permettant à d'autres tâches de continuer simultanément.
+
+➢ **Deboger** (débogage) : Processus d'identification et de correction d'erreurs ou de bugs dans un programme.
+
 ➢ **Deprecié** : Obsolescence d'une [fonction](#fonction) ou d'une [bibliothèque](#biblio) et qui pourrait être supprimée/remplacée dans les versions futures. 
 
 ➢ <b id="regex">Regex</b> (Expression régulière) : Séquence de caractères représentant un modèle de recherche dans un texte (ex: le modèle d'une adresse mail).
+
+➢ <b id="versionning">Versionning</b> (sémantique) : Système de numérotation de versions basé sur trois numéros (MAJEUR.MINOR.PATCH) pour signaler les types de modifications apportées.
 
 <br>
 
