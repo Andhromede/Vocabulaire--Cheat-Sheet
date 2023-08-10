@@ -216,9 +216,8 @@
 
 ➢ **Router** : Component qui détermine la manière dont une application répond à une demande [client](#client) pour une route, un URI (Uniform Resource Identifier) ou une [méthode](#methode) spécifique.
 
-➢ **Sémantique** : Balises HTML qui ont un sens ou une signification spécifique (par exemple, ```<header>, <footer>``` etc).
-
 ➢ <b id="service">Service</b> :  Composant ou module qui fournit une fonctionnalité spécifique à d'autres composants ou applications.
+
 
 <br>
 
@@ -324,6 +323,10 @@
 ➢ <b id="versionning">Versionning</b> (sémantique) : Système de numérotation de versions basé sur trois numéros séparés de points (MAJEUR.MINOR.PATCH) pour signaler les types de modifications apportées.
 
 ➢ <b id="implementer">Implémenter</b> : Lorsqu'une classe fournit du code concret pour toutes les méthodes déclarées par une interface, on dit alors de cette classe qu'elle "implémente" une interface.
+
+➢ <b id="semantique">Sémantique</b> : La sémantique traite du comportement attendu d'un programme lorsqu'il est exécuté. Elle fait ainsi référence au sens ou à la signification des programmes, indépendamment de leur syntaxe. Alors que la [syntaxe](#syntaxe) traite de la manière dont les programmes sont écrits, la sémantique concerne ce que fait le programme.
+
+➢ <b id="syntaxe">Syntaxe</b> : Ensemble des règles qui définissent comment les programmes doivent être structurés (propre à chaque langage). Un programme qui viole ces règles entraînera généralement une erreur de syntaxe, indiquant que le code ne peut pas être compilé ou interprété correctement. Par exemple, oublier un point-virgule à la fin d'une instruction dans certains langages peut entraîner une erreur de syntaxe.
 
 <br>
 
