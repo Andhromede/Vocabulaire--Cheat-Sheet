@@ -80,17 +80,17 @@
 
 ➢ **Abstraction** :  Pratique de cacher les détails complexes et de présenter uniquement les caractéristiques essentielles.
 
-➢ **Accesseur** (Getter) : [Méthode](#methode) utilisée pour obtenir la valeur d'un [Attribut](#attribut) "protégé".
+➢ <b id="accesseur">Accesseur</b> (Getter) : [Méthode](#methode) utilisée pour obtenir la valeur d'un [Attribut](#attribut) "protégé".
 
 ➢ **Agrégation** : Forme spéciale d'association où une [classe](#classe) contient une référence à un [objet](#objet) d'une autre classe, mais sans en prendre la propriété complète.
 
 ➢ **Association** : Relation entre deux [classes](#classe) ou l'une utilise les fonctionnalités de l'autre mais sans dépendance très forte.
 
-➢ <b id="attribut">Attribut</b> (variable membre) : [Variable](#variable) associée à une [classe](#classe) ou à une instance de classe et qui représente les [propriétées](#propriete) ou caractéristiques d'un [objet](#objet).
+➢ <b id="attribut">Attribut</b> (variable [membre](#membre)) : [Variable](#variable) associée à une [classe](#classe) ou à une instance de classe et qui représente les [propriétées](#propriete) ou caractéristiques d'un [objet](#objet).
 
 ➢ **Composition** : Une forme de relation où une [classe](#classe) contient une [instances](#instance) d'une autre classe comme [attributs](#attribut).
 
-➢ **Constructeur** : [Méthode](#methode) spéciale d'une [classe](#classe) appelée lors de création d'une instance de classe.
+➢ <b id="constructeur">Constructeur</b> : [Méthode](#methode) spéciale d'une [classe](#classe) appelée lors de création d'une instance de classe.
 
 ➢ <b id="classAbstraite">Classe Abstraite</b> : [classe](#classe) qui ne peut pas être [instanciée](#instance) directement et sert généralement de base pour d'autres classes.
 
@@ -114,13 +114,13 @@
 
 ➢ **Instantiation** : Processus de création d'un [objet](#objet) à partir d'une [classe](#classe).
 
-➢ **Interface** : Déclaration de [méthodes](#methode) sans [implémentations](#implementation) que les [classes](#classe) doivent quand à elle implémenter. Elle permet à différents [objets](#objet) d'être traités comme des [instances](#instance) d'une interface commune, indépendamment de leur classe d'origine.
+➢ **Interface** : Déclaration de [méthodes](#methode) sans [implémentations](#implementer) que les [classes](#classe) doivent quand à elle implémenter. Elle permet à différents [objets](#objet) d'être traités comme des [instances](#instance) d'une interface commune, indépendamment de leur classe d'origine.
 
 ➢ <b id="membre">Membre</b> : Attribut ou méthode associé à une [classe](#classe) ou une structure.
 
 ➢ <b id="methode">Methode</b> : [Fonction](#fonction) définie à l'intérieur d'une [classe](#classe) et qui représente les actions qu'un [objet](#objet) peut réaliser.
 
-➢ **Méthode abstraite** : [Méthode](#methode) déclarée mais non [implémentée](#implementation) dans une [classe abstraite](#classAbstraite) (elle doit toutefois être implémentée par toutes les [sous-classes](#sousClass) non abstraites).
+➢ **Méthode abstraite** : [Méthode](#methode) déclarée mais non [implémentée](#implementer) dans une [classe abstraite](#classAbstraite) (elle doit toutefois être implémentée par toutes les [sous-classes](#sousClass) non abstraites).
 
 ➢ **Mutateur** (Setter) : [Méthode](#methode) utilisée pour définir ou modifier la valeur d'un [attribut](#attribut).
 
@@ -128,7 +128,7 @@
 
 ➢ <b id="polymorphisme">Polymorhpisme</b> : Capacité de prendre plusieurs formes pour des [objets](#objet) de classes différentes afin d'être traités comme des objets d'une classe commune.
 
-➢ <b id="propriete">Propriete</b> (interface) : Synonyme d'[attribut](#attribut), c'est une caractéristique ou une donnée membre d'une classe.
+➢ <b id="propriete">Propriete</b> (interface) : Synonyme d'[attribut](#attribut), c'est une caractéristique ou une donnée [membre](#membre) d'une classe.
 
 ➢ **Singleton** : Patron de conception qui restreint l'instanciation d'une [classe](#classe) à un seul [objet](#objet).
 
@@ -190,9 +190,9 @@
 
 ➢ **Arbre** : Structure de données hiérarchique composée de [nœuds](#noeud), où chaque nœud a un parent (sauf le nœud racine) et 0 ou n enfants.
 
-➢ **Controller** : Dans un contexte MVC, il s'agit de la partie qui reçoit les requêtes, traite la logique métier et renvoie une réponse.
+➢ **Controller** : Dans un contexte [MVC](#mvc), il s'agit de la partie qui reçoit les requêtes, traite la logique métier et renvoie une réponse.
 
-➢ **DTO** (Data Transfer Object) : [Objet](#objet) utilisé pour [encapsuler](#encapsulation) les données et les transférer entre des composants d'un système.
+➢ **DTO** (Data Transfer Object) : [Objet](#objet) dont le principal rôle est de transporter des données entre des processus, des applications ou des couches d'une application. Un DTO est généralement un objet simple, souvent sans logique métier, conçu uniquement pour contenir des données. Il contient principalement des [propriétés](#propriete) (ou [attributs](#attribut)), des [accesseurs](#accesseur) (getters et setters) et parfois un [constructeur](#constructeur). Les DTO sont couramment utilisés dans les architectures orientées services. Lorsqu'un [client](#client) envoie une requête à un [service](#service), les données sont souvent envoyées sous forme de DTO, et de même lorsque les données sont renvoyées du service au client.
 
 ➢ **Design Pattern** (Pattern) : Façon répétitive ou habituelle de faire quelque chose (bonne pratique).
 
@@ -204,21 +204,21 @@
 
 ➢ **Injection** (de code) : Technique par laquelle un attaquant peut insérer ou "injecter" du code malveillant dans un système (ex: injection SQL ou de JS). 
 
-➢ **Modèle** (MVC) : Composante logiciel qui gère les données, la logique métier et les règles. Le modèle est responsable de l'accès aux données. Il sert de pont entre la base de données (ou toute autre source de données) et le contrôleur.
+➢ **Modèle** ([MVC](#mvc)) : Composante logiciel qui gère les données, la logique métier et les règles. Le modèle est responsable de l'accès aux données. Il sert de pont entre la base de données (ou toute autre source de données) et le contrôleur.
 
 ➢ **Modèle** (Entité/POO) : Désigne un schéma ou une structure de données qui illustre comment les différentes tables et relations sont organisées dans une base de données. Il s'agit de [classes](#classe) ou ensemble de classes représentant des [objets](#objet) ou des [entités](#entite) (et leurs relations) dans un système.
 
-➢ **MVC** (Model-View-Controller) : Modèle architectural pour développer des logiciels en séparant la logique métier, l'interface utilisateur et le contrôle de l'application.
+➢ <b id="mvc">MVC</b> (Model-View-Controller) : Modèle architectural pour développer des logiciels en séparant la logique métier, l'interface utilisateur et le contrôle de l'application.
 
 ➢ <b id="noeud">Nœud</b> : Élément individuel d'une structure de données, comme un [arbre](#arbre) ou une [Liste liée](#listeLiee).
 
-➢ **REST** (Representational State Transfer) : Style architectural pour la conception de services de réseau, souvent utilisé pour construire des ([API](#api)) web. 
+➢ **REST** (Representational State Transfer) : Style architectural pour la conception de [services](#service) de réseau, souvent utilisé pour construire des ([API](#api)) web. 
 
 ➢ **Router** : Component qui détermine la manière dont une application répond à une demande [client](#client) pour une route, un URI (Uniform Resource Identifier) ou une [méthode](#methode) spécifique.
 
 ➢ **Sémantique** : Balises HTML qui ont un sens ou une signification spécifique (par exemple, ```<header>, <footer>``` etc).
 
-➢ **Service** :  Composant ou module qui fournit une fonctionnalité spécifique à d'autres composants ou applications.
+➢ <b id="service">Service</b> :  Composant ou module qui fournit une fonctionnalité spécifique à d'autres composants ou applications.
 
 <br>
 
@@ -229,7 +229,7 @@
 
 ➢ **Cache** : Stockage temporaire de données pour des récupérations rapides.
 
-➢ <b id="client">Client</b> : Programme ou système (ex : navigateur) qui demande un service ou des ressources à un autre système distant, généralement appelé [serveur](#serveur).
+➢ <b id="client">Client</b> : Programme ou système (ex : navigateur) qui demande un [service](#service) ou des ressources à un autre système distant, généralement appelé [serveur](#serveur).
 
 ➢ **Compilation** : Processus de transformation du code source de haut niveau (C#, Java, etc.) en un code machine ou en un code intermédiaire exécutable par un ordinateur.
 
@@ -273,7 +273,7 @@
 
 ➢ <b id="serialisation">Serialisation</b> : Processus de conversion d'un [objet](#objet) ou d'une structure de données en un format linéaire (binaire, XML, JSON, etc) = JSON.parse en JS, et ceux pour le stockage ou la transmission. 
 
-➢ <b id="serveur">Serveur</b> :  Système ou application fournissant des ressources, des données ou des services à des [clients](#client).
+➢ <b id="serveur">Serveur</b> :  Système ou application fournissant des ressources, des données ou des [services](#service) à des [clients](#client).
 
 ➢ **Socket** : Point de terminaison pour envoyer ou recevoir des données à travers un réseau.
 
@@ -300,7 +300,7 @@
 
 ➢ **IDE** (Integrated Development Environment) : Environnement de développement intégré afin d'écrire, de tester et de déboguer du code.
 
-➢ **Middleware** : Logiciel qui agit comme un pont entre différents logiciels ou services.
+➢ **Middleware** : Logiciel qui agit comme un pont entre différents logiciels ou [services](#service). Dans les frameworks de développement web, comme Express pour Node, un middleware est une [fonction](#fonction) qui a accès aux [objets](#objet) de requête/réponse, et au prochain middleware dans le cycle de requête-réponse. Il peut exécuter n'importe quel code, effectuer des modifications aux objets de requête et de réponse, terminer le cycle de requête-réponse ou appeler le prochain middleware.
 
 ➢ **ORM** (Object-Relational Mapping) : Technique permettant de mapper et de synchroniser les données entre des systèmes de bases de données relationnelles et des objets orientés [objet](#objet).
 
@@ -321,7 +321,9 @@
 
 ➢ <b id="regex">Regex</b> (Expression régulière) : Séquence de caractères représentant un modèle de recherche dans un texte (ex: le modèle d'une adresse mail).
 
-➢ <b id="versionning">Versionning</b> (sémantique) : Système de numérotation de versions basé sur trois numéros (MAJEUR.MINOR.PATCH) pour signaler les types de modifications apportées.
+➢ <b id="versionning">Versionning</b> (sémantique) : Système de numérotation de versions basé sur trois numéros séparés de points (MAJEUR.MINOR.PATCH) pour signaler les types de modifications apportées.
+
+➢ <b id="implementer">Implémenter</b> : Lorsqu'une classe fournit du code concret pour toutes les méthodes déclarées par une interface, on dit alors de cette classe qu'elle "implémente" une interface.
 
 <br>
 
